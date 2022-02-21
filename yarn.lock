@@ -73,6 +73,13 @@
   dependencies:
     "@types/throttle-debounce" "^2.1.0"
 
+"@antfu/utils@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.4.0.tgz#df100ed9922d7359bf6c99083765b5207086b9a7"
+  integrity sha512-gqkpvjkgFUu+s3kP+Ly33OKpo5zvVY3FDFhv5BIb98SncS3KD6DNxPfNDjwHIoyXbz1leWo1j8DtRLZ1D2Jv+Q==
+  dependencies:
+    "@types/throttle-debounce" "^2.1.0"
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -2321,6 +2328,15 @@
     jiti "^1.12.9"
     windicss "^3.4.0"
 
+"@windicss/config@1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.7.1.tgz#f0c432796bff75bad58c72f168329fbe34619025"
+  integrity sha512-bT4Ze8d1kTKbVdQZ7yal9vjhIfuYypco2gVTy4OXvg6eAHFNZaOB/Ai4FqdRKvbgOqChHGiC32r5J55hmq6tDw==
+  dependencies:
+    debug "^4.3.3"
+    jiti "^1.12.9"
+    windicss "^3.4.3"
+
 "@windicss/plugin-utils@^1.6.1":
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.6.1.tgz#0459428beaa3b9053838c047ccb6001493a926a9"
@@ -2333,6 +2349,19 @@
     magic-string "^0.25.7"
     micromatch "^4.0.4"
     windicss "^3.4.0"
+
+"@windicss/plugin-utils@^1.7.0":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.7.1.tgz#f1d5ac3d0d437d88c93ee4ea575c41907537523d"
+  integrity sha512-VMBLZ11s5kQt1RIIwfB45xFswb+SI1cvI5mK07dUSlfpomG1d1bqnB57bioo/jFNZh2Rl8wVnEvLTl7iZ4r09Q==
+  dependencies:
+    "@antfu/utils" "^0.4.0"
+    "@windicss/config" "1.7.1"
+    debug "^4.3.3"
+    fast-glob "^3.2.11"
+    magic-string "^0.25.7"
+    micromatch "^4.0.4"
+    windicss "^3.4.3"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -5299,6 +5328,17 @@ fast-glob@^3.1.1:
     merge2 "^1.3.0"
     micromatch "^4.0.2"
     picomatch "^2.2.1"
+
+fast-glob@^3.2.11:
+  version "3.2.11"
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
+  integrity sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew==
+  dependencies:
+    "@nodelib/fs.stat" "^2.0.2"
+    "@nodelib/fs.walk" "^1.2.3"
+    glob-parent "^5.1.2"
+    merge2 "^1.3.0"
+    micromatch "^4.0.4"
 
 fast-glob@^3.2.7:
   version "3.2.7"
@@ -8458,6 +8498,11 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+pathe@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
+  integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
+
 pbkdf2@^3.0.3:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.1.1.tgz#cb8724b0fada984596856d1a6ebafd3584654b94"
@@ -11280,10 +11325,8 @@ watchpack@^1.7.4:
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
-    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
-    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
@@ -11539,24 +11582,31 @@ widest-line@^3.1.0:
   dependencies:
     string-width "^4.0.0"
 
-windicss-webpack-plugin@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.6.2.tgz#273def94ca566ab86fc8cfb7acf9f9a67c644922"
-  integrity sha512-1NhvBVmClIgxnC6C50RlqdpL9klF4g1JwJAoDNCdY0fO6o5GP6hO+E3xGCWI38l4Ij36JQZ4/CxFKWjdixXFBQ==
+"windicss-webpack-plugin@github:idmytro/windicss-webpack-plugin#idmytro/windi-cm":
+  version "1.6.6-idmytro"
+  resolved "https://codeload.github.com/idmytro/windicss-webpack-plugin/tar.gz/617fc989d618a422e3a0dd41a5a745535f2d8f14"
   dependencies:
-    "@windicss/plugin-utils" "^1.6.1"
+    "@windicss/plugin-utils" "^1.7.0"
     debug "^4.3.3"
     loader-utils "^2.0.0"
     lodash "^4.17.21"
-    magic-string "^0.25.7"
-    upath "^2.0.1"
+    pathe "^0.2.0"
     webpack-virtual-modules "^0.4.3"
-    windicss "^3.4.0"
+    windicss "github:idmytro/windicss#idmytro/3.4.4-idmytro"
 
 windicss@^3.4.0:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.4.2.tgz#257795c9be8b6e93117ffa3fb27874d225da6679"
   integrity sha512-YieqWaXiwPu0JJoB7z03RXdjZjQQJtMZAeXUXu/j3JXSMhIgV/2rUXu4Q7QrworRlbaASZlFhxjnL/78aAty+Q==
+
+windicss@^3.4.3:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.4.3.tgz#347d09fee8eb6b3fc5e6e68b435c76ccb24a748c"
+  integrity sha512-UnugThsvEgy8RsPm4/B5DYMCAqvZzD6yWU7Anh+f07t5RSJ8zvmAylGLbXrHPJEmCKzo2Mf+fOUvISH7IJqM3A==
+
+"windicss@github:idmytro/windicss#idmytro/3.4.4-idmytro":
+  version "3.4.9"
+  resolved "https://codeload.github.com/idmytro/windicss/tar.gz/2c2a3b99a6fcf018790097944fd73888fa418d6c"
 
 windows-release@^4.0.0:
   version "4.0.0"

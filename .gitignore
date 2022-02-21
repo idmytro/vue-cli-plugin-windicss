@@ -1,7 +1,7 @@
 inspo
 node_modules
 yarn-error.log
-dist
+# dist
 example/dist
 .idea
 .env
