@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-windicss",
-  "version": "1.1.3",
+  "version": "1.1.99",
   "description": "Windi CSS for Vue CLI",
   "main": "index.js",
   "types": "dist",
@@ -66,6 +66,6 @@
   },
   "dependencies": {
     "defu": "^4.0.1",
-    "windicss-webpack-plugin": "^1.6.2"
+    "windicss-webpack-plugin": "github:idmytro/windicss-webpack-plugin#idmytro"
   }
 }
