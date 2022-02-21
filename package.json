@@ -66,6 +66,6 @@
   },
   "dependencies": {
     "defu": "^4.0.1",
-    "windicss-webpack-plugin": "github:idmytro/windicss-webpack-plugin#idmytro"
+    "windicss-webpack-plugin": "github:idmytro/windicss-webpack-plugin#idmytro/cm"
   }
 }
